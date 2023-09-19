@@ -24,6 +24,7 @@ function App() {
     about: 'Загрузка',
     _id: ''
   });
+  
   const [cards, setCards] = React.useState([]);
   const [isEditProfilePopupOpen, setEditProfilePopupOpen] = React.useState(false);
   const [isAddPlacePopupOpen, setAddPlacePopupOpen] = React.useState(false);

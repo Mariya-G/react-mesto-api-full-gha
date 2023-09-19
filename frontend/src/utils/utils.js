@@ -16,6 +16,7 @@ export const buttonCloseView = document.querySelector('.popup__close-button_view
 export const avatar = document.querySelector('.profile__avatar');
 export const buttonEditAvatar = document.querySelector('.profile__avatar-button');
 export const popupAvatar = document.querySelector('.popup_avatar');
+
 export const formleValidationConfig = {
   formSelector: '.popup__form',
   inputSelector: '.popup__input',

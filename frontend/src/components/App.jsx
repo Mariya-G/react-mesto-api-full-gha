@@ -85,8 +85,14 @@ function App() {
   }
 
   const handleSignOut = () => {
-    setLoggedIn(false);
-  }
+    auth.signOut()
+      .then(() => {
+        navigate('/signin', { replace: true });
+        setLoggedIn(false);
+        setUserEmail({ email: '' });
+      })
+      .catch((error) => console.log(`Ошибка: ${error}`));
+  };
 
 const checkToken = () => {
   auth.getContent()

@@ -85,7 +85,7 @@ const getAuthUser = (req, res, next) => {
     .catch(next);
 };
 
-const logOut = (req, res) => {
+const singOut = (req, res) => {
   res.clearCookie('jwt').send({ message: 'Выход' });
   res.end();
 };
@@ -138,5 +138,5 @@ module.exports = {
   getUsers,
   updateUser,
   updateAvatar,
-  logOut,
+  singOut,
 };
